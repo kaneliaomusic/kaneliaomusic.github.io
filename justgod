@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Stories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Bible Stories</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Story Card -->
+        <div class="story-card">
+            <h2>Creation of the World (Genesis 1:1-31)</h2>
+            <p>
+                In the beginning, God created the heavens and the earth 
+                (<strong>Genesis 1:1</strong>). On the first day, He created light and separated it from darkness 
+                (<strong>Genesis 1:3-4</strong>). On subsequent days, God formed the sky, land, seas, plants, animals, and finally humans in His image 
+                (<strong>Genesis 1:26-27</strong>). On the seventh day, He rested, declaring His creation "very good" 
+                (<strong>Genesis 2:1-3</strong>).
+            </p>
+            
+            <!-- Quiz Section -->
+            <div class="quiz-section">
+                <h3>Quiz: What did God create on the first day?</h3>
+                <form id="quiz-form">
+                    <input type="radio" name="question" value="incorrect" id="option1">
+                    <label for="option1">Animals</label><br>
+
+                    <input type="radio" name="question" value="incorrect" id="option2">
+                    <label for="option2">Plants</label><br>
+
+                    <input type="radio" name="question" value="correct" id="option3">
+                    <label for="option3">Light</label><br>
+                </form>
+                <button id="submit-quiz">Submit Answer</button>
+                <p id="quiz-result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
