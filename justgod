@@ -28,7 +28,7 @@
             <!-- Quiz Section -->
             <div class="quiz-section">
                 <h3>Quiz: What did God create on the first day?</h3>
-                <form id="quiz-form">
+                <!--<form id="quiz-form">
                     <input type="radio" name="question" value="incorrect" id="option1">
                     <label for="option1">Animals</label><br>
 
@@ -39,7 +39,7 @@
                     <label for="option3">Light</label><br>
                 </form>
                 <button id="submit-quiz">Submit Answer</button>
-                <p id="quiz-result"></p>
+                <p id="quiz-result"></p>-->
             </div>
         </div>
     </div>
