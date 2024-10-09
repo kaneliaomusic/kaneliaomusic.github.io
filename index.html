@@ -1,48 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar Email</title>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Click the Button Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        #button {
+            padding: 20px;
+            font-size: 20px;
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <h1>Formulario de Contacto</h1>
-    <p>Rellena el formulario y presiona el botón para enviar un email.</p>
-</header>
-
-<section>
-    <input type="text" id="nombre" placeholder="Tu Nombre" required>
-    <input type="email" id="email" placeholder="Tu Correo" required>
-    <textarea id="mensaje" placeholder="Tu Mensaje" required></textarea>
-    <button onclick="sendEmail()">Enviar Email</button>
-</section>
-
-<script>
-function sendEmail() {
-    const nombre = document.getElementById('nombre').value;
-    const email = document.getElementById('email').value;
-    const mensaje = document.getElementById('mensaje').value;
-
-    Email.send({
-        Host: "smtp.yourisp.com", // Cambia esto por tu servidor SMTP
-        Username: "tu_usuario", // Tu nombre de usuario
-        Password: "tu_contraseña", // Tu contraseña
-        To: 'destinatario@ejemplo.com', // Destinatario
-        From: email,
-        Subject: `Mensaje de ${nombre}`,
-        Body: mensaje
-    })
-    .then(function (message) {
-        alert("Email enviado con éxito");
-    })
-    .catch(function (error) {
-        alert("Error al enviar el email: " + error);
-    });
-}
-</script>
-
+    <button id="button">Click me!</button>
+    <div id="score">Score: 0</div>
+    <script src="app.js"></script>
 </body>
 </html>
